@@ -1,0 +1,314 @@
+# version: "3.1"
+
+# stories:
+
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+
+# - story: story_7
+#   steps:
+#   - intent: Outputfor7
+#   - action: utter_drawer7
+
+# - story: drawer_1
+#   steps:
+#   - intent: drawer1
+#   - action: utter_drawer1
+
+# - story: drawer_2
+#   steps:
+#   - intent: drawer2
+#   - action: utter_drawer2
+
+# - story: drawer_3
+#   steps:
+#   - intent: drawer3
+#   - action: utter_drawer3
+
+# - story: drawer_4
+#   steps:
+#   - intent: drawer4
+#   - action: utter_drawer4
+
+# - story: drawer_5
+#   steps:
+#   - intent: drawer5
+#   - action: utter_drawer5
+
+# - story: drawer_6
+#   steps:
+#   - intent: drawer6
+#   - action: utter_drawer6
+
+# - story: drawer_8
+#   steps:
+#   - intent: drawer8
+#   - action: utter_drawer8
+
+# - story: drawer_9
+#   steps:
+#   - intent: drawer9
+#   - action: utter_drawer9
+
+# - story: snakbdaksbdkjs
+#   steps:
+#   - intent: nlu_fallback
+#   - action: utter_drawer1
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: gac path
+  steps: 
+  - intent: ask_event_info_2023
+  - action: gac2023_basic_info
+  - action: restart_convo
+- story: gac path2
+  steps: 
+  - intent: gac_event_info
+  - action: gac2023_basic_info
+  - action: restart_convo
+- story: gac path
+  steps: 
+  - intent: gac_2023_donations
+  - action: utter_don
+  - action: restart_convo
+- story: gac org
+  steps:
+  - intent: gac_2023_organizing
+  - action: gac2023_orgcom
+  - action: restart_convo
+- story: gac spon
+  steps:
+  - intent: gac_2023_sponsorship
+  - action: utter_gacspon
+  - action: restart_convo
+- story: gac reg
+  steps:
+  - intent: gac_2023_registration
+  - action: gac_reg
+  - action: restart_convo
+- story: gac pay
+  steps:
+  - intent: gac_2023_payment
+  - action: utter_gac_pay
+  - action: restart_convo
+- story: mnnit location
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mnnit_location
+  - action: utter_mnnit_location
+
+- story: mnnit full  form
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mnnit_full_form
+  - action: utter_mnnit_full_form
+- story: boys_hostel
+  steps:
+  - intent: Boys_hostel
+  - action: utter_boys_hostel_count
+  - action: restart_convo
+
+- story: girls hostel count
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: girls_hostel_count
+  - action: utter_girls_hostel_count
+
+- story: girls hostel names
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: girls_hostel_names
+  - action: utter_girls_hostel_names
+
+- story: mnnit_clubs
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mnnit_clubs
+  - action: utter_mnnit_clubs
+
+- story:  what_is_academic_building
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_academic_building
+  - action: utter_what_is_academic_building
+
+- story:  what_is_administrative_building
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_is_administrative_building
+  - action: utter_what_is_administrative_building
+
+- story:  what_is_administrative_building
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: girls_gym_mnnit
+  - action: utter_girls_gym_mnnit
+
+- story:  what_is_administrative_building
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: canteens_girls_hostel_mnnit
+  - action: utter_canteens_girls_hostel_mnnit
+
+- story: girls_gym_mnnit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: girls_gym_mnnit
+  - action: utter_girls_gym_mnnit
+
+- story: canteens_girls_hostel_mnnit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: canteens_girls_hostel_mnnit
+  - action: utter_canteens_girls_hostel_mnnit
+
+- story: seminar_hall_mnnit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: seminar_hall_mnnit
+  - action: utter_seminar_hall_mnnit
+
+- story: mp_hall_mnnit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mp_hall_mnnit
+  - action: utter_mp_hall_mnnit
+
+- story: dean_office_mnnit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dean_office_mnnit
+  - action: utter_dean_office_mnnit
+
+- story: library_mnnit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: library_mnnit
+  - action: utter_library_mnnit
+
+- story: warden_office_mnnit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: warden_office_mnnit
+  - action: utter_warden_office_mnnit
+- story: boys hostel canteens
+  steps:
+  - intent: boys_hostel_canteens
+  - action: utter_boys_hostel_canteen
+  - action: 
+- story: project
+  steps:
+  - intent: projects
+  - action: utter_project 
+  - action: restart_convo
+- story: balance
+  steps:
+  - intent: ask_self_balancing_bot 
+  - action: utter_balance
+  - action: restart_convo
+- story: human
+  steps:
+  - intent: humanoid_info
+  - action: utter_human
+  - action: restart_convo
+- story: spider
+  steps:
+  - intent: SpiderBot_info
+  - action: utter_spider
+  - action: restart_convo
+- story: rl
+  steps:
+  - intent: rlsupermario_info
+  - action: utter_rl
+  - action: restart_convo
+- story: chatbot
+  steps:
+  - intent: chatbot_info
+  - action: utter_chatbot
+  - action: restart_convo
+- story: linefollower
+  steps:
+  - intent: linefollower_info
+  - action: utter_linefollower
+  - action: restart_convo
+- story: maine_att
+  steps:
+  - intent: main_attraction
+  - action: utter_main
+- story: fallback
+  steps:
+  - intent: nlu_fallback
+  - action: say_fallback
+- story: self
+  steps:
+  - intent: selfdrivingcart_info
+  - action: utter_self
+  - action: restart_convo
